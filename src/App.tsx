@@ -43,24 +43,29 @@ const App: React.FC = () => (
             left: 0,
           }}
         />
-        <Row style={{ padding: '120px 30px', height: 440 }} justify="center" align="stretch">
-          <Col span={24}>
-            <Typography.Text>
-              <div
-                style={{
-                  color: '#F2F2F2',
-                  fontSize: 22,
-                  textAlign: 'center',
-                }}
-              >
-                Щиро запрошуємо до Полтавської дитячої музичної школа №2 ім. В.П.Шаповаленка
-              </div>
-            </Typography.Text>
-          </Col>
-          <Col style={{ height: 'min-content' }}>
-            <Button style={{ background: '#CB7A30' }}>Create</Button>
-          </Col>
-        </Row>
+        <div
+          style={{
+            padding: '120px 32px',
+            height: 440,
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+          }}
+        >
+          <div
+            style={{
+              color: '#F2F2F2',
+              fontSize: 22,
+              textAlign: 'center',
+              fontFamily: "'Vollkorn', serif",
+            }}
+          >
+            Щиро запрошуємо до Полтавської дитячої музичної школа №2 ім. В.П.Шаповаленка
+          </div>
+
+          <Button style={{ background: '#CB7A30', width: 100 }}>Create</Button>
+        </div>
       </Col>
     </Row>
     <Row>
