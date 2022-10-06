@@ -1,0 +1,179 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "react-app",
+    "prettier",
+    "standard",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:flowtype/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/array-type": ["error"],
+    "@typescript-eslint/ban-ts-comment": ["error"],
+    "@typescript-eslint/ban-ts-ignore": ["off"],
+    "@typescript-eslint/ban-types": ["warn"], //error
+    "@typescript-eslint/camelcase": ["off"],
+    "@typescript-eslint/explicit-module-boundary-types": ["off"],
+    "@typescript-eslint/no-empty-function": ["off"], //["error"],
+    "@typescript-eslint/no-empty-interface": ["error"],
+    "@typescript-eslint/no-explicit-any": ["off"], // ["error"],
+    "@typescript-eslint/no-extra-non-null-assertion": ["error"],
+    "@typescript-eslint/no-inferrable-types": ["warn"],
+    "@typescript-eslint/no-unused-expressions": ["warn"],
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/no-var-requires": ["error"],
+    "camelcase": "off",
+    "comma-spacing": "off", //["error", { "before": false, "after": true }]
+    "curly": "error",
+    "dot-notation": "error",
+    "generator-star-spacing": ["error", { "before": false, "after": true }],
+    "indent": ["off"],
+    "jsx-a11y/accessible-emoji": "off",
+    "jsx-a11y/autocomplete-valid": "off",
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "jsx-a11y/label-has-associated-control": "error",
+    "jsx-a11y/media-has-caption": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/no-static-element-interactions": "warn",
+    "jsx-quotes": [1, "prefer-double"],
+    "multiline-ternary": ["off"],
+    "no-async-promise-executor": ["error"],
+    "no-case-declarations": "error",
+    "no-constant-condition": "error",
+    "no-empty": "error",
+    "no-empty-pattern": ["error"],
+    "no-extra-boolean-cast": "error",
+    "no-prototype-builtins": ["off"],
+    "no-trailing-spaces": "error",
+    // "no-undef": ["error"],
+    "no-unneeded-ternary": "error",
+    "no-unused-expressions": "warn",
+    "no-use-before-define": "off",
+    "no-useless-escape": "off",
+    "no-var": "error",
+    "node/handle-callback-err": "error",
+    "object-curly-spacing": ["error", "always"],
+    "operator-linebreak": "error",
+    "prefer-const": "off",
+    "prefer-regex-literals": "off",
+    "quotes": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react/button-has-type": "error",
+    "react/display-name": "off",
+    "react/forbid-component-props": ["warn", { "forbid": ["style"] }],
+    "react/jsx-boolean-value": "warn",
+    "react/jsx-child-element-spacing": "off",
+    "react/jsx-closing-bracket-location": "error",
+    "react/jsx-closing-tag-location": "error",
+    "react/jsx-key": "error",
+    "react/jsx-no-constructed-context-values": "error",
+    "react/jsx-no-script-url": "error",
+    "react/jsx-no-useless-fragment": "error",
+    "react/jsx-pascal-case": "error",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/no-array-index-key": "error",
+    "react/no-direct-mutation-state": "error",
+    "react/no-this-in-sfc": "error",
+    "react/no-unknown-property": "error",
+    "react/no-unused-state": "error",
+    "react/react-in-jsx-scope": "off",
+    "react/self-closing-comp": "error",
+    "react/style-prop-object": "error",
+    "react/void-dom-elements-no-children": "error",
+    "semi": ["error", "always"],
+    "sort-keys": ["off"],
+    "space-before-function-paren": ["off"],
+    "spaced-comment": ["off"],
+    "yoda": "error",
+    "comma-dangle": ["off"],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link", "NavLink"],
+        "specialLink": ["to"]
+      }
+    ],
+    "jsx-a11y/alt-text": [
+      "error",
+      {
+        "elements": ["img", "object", "area", "input[type=\"image\"]"],
+        "img": ["Image"],
+        "object": ["Object"],
+        "area": ["Area"],
+        "input[type=\"image\"]": ["InputImage"]
+      }
+    ],
+    "jsx-a11y/anchor-has-content": [
+      "error",
+      {
+        "components": ["Anchor"]
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "warn",
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      }
+    ],
+    "flowtype/boolean-style": [2, "boolean"],
+    "flowtype/define-flow-type": 1,
+    "flowtype/delimiter-dangle": [2, "never"],
+    // "flowtype/generic-spacing": [2, "never"],
+    // "flowtype/interface-id-match": [2, "^([A-Z][a-z0-9]+)+Type$"],
+    "flowtype/no-mixed": 2,
+    "flowtype/no-primitive-constructor-types": 2,
+    "flowtype/no-types-missing-file-annotation": 0, //error
+    "flowtype/no-weak-types": 2,
+    "flowtype/object-type-delimiter": [2, "comma"],
+    "flowtype/require-parameter-type": 0,
+    "flowtype/require-readonly-react-props": 0,
+    // "flowtype/require-return-type": [
+    //   2,
+    //   "always",
+    //   {
+    //     "annotateUndefined": "never"
+    //   }
+    // ],
+    "flowtype/require-valid-file-annotation": 2,
+    "flowtype/semi": [2, "always"],
+    // "flowtype/space-after-type-colon": [2, "always"],
+    // "flowtype/space-before-generic-bracket": [2, "never"],
+    // "flowtype/space-before-type-colon": [2, "never"],
+    "flowtype/type-id-match": [2, "^([A-Z][a-z0-9]+)+Type$"],
+    "flowtype/union-intersection-spacing": [2, "always"],
+    "flowtype/use-flow-type": 1,
+    "flowtype/valid-syntax": 1
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "globals": {
+    "ITypes": true,
+    "React": true,
+    "google": true,
+    "mount": true,
+    "mountWithRouter": true,
+    "shallow": true,
+    "shallowWithRouter": true,
+    "context": true,
+    "expect": true,
+    "jsdom": true,
+    "JSX": true
+  },
+  "plugins": ["prettier", "react-hooks", "@typescript-eslint", "jsx-a11y", "flowtype"]
+}
