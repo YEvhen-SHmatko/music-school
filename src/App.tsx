@@ -1,14 +1,27 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
+import { Col, Row } from 'antd';
 import React from 'react';
 
-const App: React.FC = () => {
-  
-  return (
-    <div>
-      test
-    </div>
-  );
-};
+const App: React.FC = () => (
+  <>
+    <Row>
+      <Col span={24}>col</Col>
+    </Row>
+    <Row>
+      <Col span={12}>col-12</Col>
+      <Col span={12}>col-12</Col>
+    </Row>
+    <Row>
+      <Col span={8}>col-8</Col>
+      <Col span={8}>col-8</Col>
+      <Col span={8}>col-8</Col>
+    </Row>
+    <Row>
+      <Col span={6}>col-6</Col>
+      <Col span={6}>col-6</Col>
+      <Col span={6}>col-6</Col>
+      <Col span={6}>col-6</Col>
+    </Row>
+  </>
+);
 
 export default App;
