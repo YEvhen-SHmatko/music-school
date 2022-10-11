@@ -1,6 +1,6 @@
 import { Col, Row } from 'antd';
 import React from 'react';
-import { Department, Header, Slider } from './components';
+import { Department, Header, Slider, Welcome } from './components';
 import Quote from './components/Quote/Quote';
 
 const SliderItem = ({ item }: { item: number }) => (
@@ -20,6 +20,7 @@ const App: React.FC = () => (
     <Col span={24}>
       <Slider items={[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]} SliderItem={SliderItem} />
     </Col>
+    <Welcome />
   </Row>
 );
 
