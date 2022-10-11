@@ -15,4 +15,5 @@ const App: React.FC = () => (
     </Col>
   </Row>
 );
+
 export default App;

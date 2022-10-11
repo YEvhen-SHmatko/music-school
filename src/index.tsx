@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import App from './components/App';
+import App from './App';
 import 'antd/dist/antd.css';
 import './styles/index.css';
 
