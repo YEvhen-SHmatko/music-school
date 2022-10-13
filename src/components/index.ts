@@ -1,4 +1,3 @@
 export { default as Slider } from './Slider';
 export { Header } from './Header';
 export { default as Department } from './Department';
-export { Welcome } from './Welcome';
