@@ -1,0 +1,17 @@
+.container {
+  border-top: 4px solid #d9c1a6;
+  border-left: 4px solid #d9c1a6;
+  border-bottom: 4px solid #d9c1a6;
+  border-right: 4px solid #d9c1a6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 54px;
+  width: 100%;
+  background-color: #4f4f4f;
+}
+.quotetext {
+  color: #d9c1a6 !important;
+  font-size: 8px;
+}
