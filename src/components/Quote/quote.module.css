@@ -1,0 +1,12 @@
+.container {
+  border-top: 2px solid gold;
+  border-left: 2px solid gold;
+  border-bottom: 2px solid gold;
+  border-right: 2px solid gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 54px;
+  width: 100%;
+}
