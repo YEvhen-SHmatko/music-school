@@ -15,7 +15,7 @@ const App: React.FC = () => (
       <Header />
     </Col>
     <Col span={24}>
-      <Quote />
+      <Quote quoteText="Every art tends to become music" autor="Peter Walter" />
     </Col>
     <Col span={24}>
       <Slider items={[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]} SliderItem={SliderItem} />

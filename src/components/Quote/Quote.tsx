@@ -2,10 +2,15 @@ import { Typography } from 'antd';
 import React from 'react';
 import s from './quote.module.css';
 
-const Quote: React.FC = () => (
+interface IProps {
+  quoteText: string;
+  autor: string;
+}
+
+const Quote: React.FC<IProps> = ({ quoteText, autor }) => (
   <div className={s.container}>
-    <Typography.Text style={{ fontSize: 8 }}>every art tends to become music</Typography.Text>
-    <Typography.Text style={{ fontSize: 8 }}>Autor</Typography.Text>
+    <Typography.Text className={s.quotetext}>{quoteText}</Typography.Text>
+    <Typography.Text className={s.quotetext}>{autor}</Typography.Text>
   </div>
 );
 
