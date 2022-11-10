@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row, Button } from 'antd';
+import { Col, Row, Button, notification } from 'antd';
 import s from './baner.module.css';
 
 const Baner: React.FC = () => {
@@ -19,7 +19,14 @@ const Baner: React.FC = () => {
             </span>
           </Col>
           <Col className={s.block_button}>
-            <Button className={s['button-style']}>Записатися</Button>
+            <Button
+              className={s['button-style']}
+              onClick={() => {
+                notification.error({ message: 'do not work' });
+              }}
+            >
+              Записатися
+            </Button>
           </Col>
         </Row>
       </Col>
