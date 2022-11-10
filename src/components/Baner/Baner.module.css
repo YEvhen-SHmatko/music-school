@@ -1,1 +1,29 @@
-
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+.block_button {
+  height: min-content;
+}
+.block_img {
+  position: relative;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 22px;
+}
+.block_text {
+  display: flex;
+  justify-content: center;
+  padding: 120px 30px;
+  height: 440px;
+  text-align: center;
+  align-items: stretch;
+}
+.button-style {
+  background: #cb7a30 !important;
+}
