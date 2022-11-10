@@ -14,6 +14,13 @@ const App: React.FC = () => (
       <Header />
     </Col>
     <Col span={24}>
+      <div className="test">
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 0].map((i) => (
+          <div key={i}>{i}</div>
+        ))}
+      </div>
+    </Col>
+    <Col span={24}>
       <Quote quoteText="Every art tends to become music" autor="Peter Walter" />
     </Col>
     <Col span={24}>
