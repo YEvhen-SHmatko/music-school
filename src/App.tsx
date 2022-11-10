@@ -1,7 +1,6 @@
 import { Col, Row } from 'antd';
 import React from 'react';
-import { Department, Header, Slider, Baner } from './components';
-import Quote from './components/Quote/Quote';
+import { Department, Header, Slider, Baner, Quote } from './components';
 
 const SliderItem = ({ item }: { item: number }) => (
   <Department
