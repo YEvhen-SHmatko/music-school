@@ -9,7 +9,7 @@ const SliderItem = ({ item }: { item: number }) => (
   />
 );
 const App: React.FC = () => (
-  <Row style={{ height: '100vh' }}>
+  <Row>
     <Col span={24}>
       <Header />
     </Col>

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.min.css';
 import './styles/index.css';
 
 const elRoot = document.getElementById('root');
