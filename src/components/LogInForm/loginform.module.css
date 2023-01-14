@@ -1,0 +1,8 @@
+.container {
+  border: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
