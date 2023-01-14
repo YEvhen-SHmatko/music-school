@@ -1,8 +1,25 @@
 .container {
   border: 1px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: black;
+}
+
+.container > :nth-child(n) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.container > :nth-child(2n) {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.container > :global(.ant-form-item) {
+  margin-bottom: 0px !important;
+  padding: 10px;
+}
+.container :global(.ant-input) {
+  background: transparent !important;
+  border-color: transparent !important;
+  color: rgb(195, 190, 190);
+}
+.container :global(.ant-form-item-label > label) {
+  color: rgb(195, 190, 190);
 }
