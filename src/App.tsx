@@ -1,6 +1,6 @@
 import { Col, Row } from 'antd';
 import React from 'react';
-import { Department, Header, Slider, Baner, Quote, LogInForm } from './components';
+import { Department, Header, Slider, Baner, Quote, LogInForm, Teacher } from './components';
 
 const SliderItem = ({ item }: { item: number }) => (
   <Department
@@ -21,6 +21,23 @@ const App: React.FC = () => (
     </Col>
     <Col span={24}>
       <Slider items={[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]} SliderItem={SliderItem} />
+    </Col>
+    <Col span={24}>
+      <Slider
+        items={[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]}
+        SliderItem={() => {
+          return (
+            <Teacher
+              img={{ alt: 'Teachers', src: '/img/teacher-img.jpg' }}
+              meta={{
+                title: 'Наталія Шаповал',
+                description: 'Естрадний відділ',
+                links: [{ id: 'facebook', link: 'www.facebook.com' }],
+              }}
+            />
+          );
+        }}
+      />
     </Col>
     <Col span={24}>
       <LogInForm />
