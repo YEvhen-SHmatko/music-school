@@ -9,8 +9,10 @@ interface IProps {
 
 const Quote: React.FC<IProps> = ({ quoteText, autor }) => (
   <div className={s.container}>
-    <Typography.Text className={s.quotetext}>{quoteText}</Typography.Text>
-    <Typography.Text className={s.quotetext}>{autor}</Typography.Text>
+    <div className={`root-container ${s.content}`}>
+      <Typography.Text className={s.quotetext}>{quoteText}</Typography.Text>
+      <Typography.Text className={s.quotetext}>{autor}</Typography.Text>
+    </div>
   </div>
 );
 
