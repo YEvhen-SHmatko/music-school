@@ -6,7 +6,8 @@ const App: React.FC = () => {
   const onFinish = (values: any) => {
     notification.success({
       description: JSON.stringify(values, null, '\t'),
-      message: 'We will call you soon ' + values.username,
+      // message: 'We will call you soon ' + values.username,
+      message: `We will call you soon ${values.username}!`,
     });
   };
 
