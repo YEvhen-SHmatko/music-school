@@ -1,13 +1,21 @@
-import { Button, Form, Input } from 'antd';
+import { Button, notification, Form, Input } from 'antd';
+import { ValidateErrorEntity } from 'rc-field-form/lib/interface';
 import React from 'react';
 import s from './loginform.module.css';
 const App: React.FC = () => {
   const onFinish = (values: any) => {
-    console.log('Success:', values);
+    notification.success({
+      description: JSON.stringify(values, null, '\t'),
+      message: 'We will call you soon ' + values.username,
+    });
   };
 
-  const onFinishFailed = (errorInfo: any) => {
-    console.log('Failed:', errorInfo);
+  const onFinishFailed = (errorInfo: ValidateErrorEntity) => {
+    notification.error({
+      message: Object.values(errorInfo.errorFields)
+        .map(({ errors }) => errors.join(', '))
+        .join(', '),
+    });
   };
 
   return (
