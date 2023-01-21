@@ -28,10 +28,10 @@ const App: React.FC = () => (
         SliderItem={() => {
           return (
             <Teacher
-              img={{ alt: 'Department', src: '/img/card-picture.jpg' }}
+              img={{ alt: 'Teachers', src: '/img/teacher-img.jpg' }}
               meta={{
-                title: 'Music department',
-                description: 'Details',
+                title: 'Наталія Шаповал',
+                description: 'Естрадний відділ',
                 links: [{ id: 'facebook', link: 'www.facebook.com' }],
               }}
             />
