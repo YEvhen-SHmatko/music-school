@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-content: center;
+  height: 54px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.labeltext {
+  color: #000000;
+  font-size: 14px;
+}
+.labelline {
+  color: rgb(218, 215, 215) !important;
+  font-size: 14px;
+}
