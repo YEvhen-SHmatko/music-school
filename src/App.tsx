@@ -1,6 +1,6 @@
 import { Col, Row } from 'antd';
 import React from 'react';
-import { Department, Header, Slider, Baner, Quote, LogInForm, Teacher } from './components';
+import { Department, Header, Label, Slider, Baner, Quote, LogInForm, Teacher } from './components';
 
 const SliderItem = ({ item }: { item: number }) => (
   <Department
@@ -23,9 +23,15 @@ const App: React.FC = () => (
       <Quote quoteText="Every art tends to become music" autor="Peter Walter" />
     </Col>
     <Col span={24}>
+      <Label labelText="ВІДДІЛИ" />
+    </Col>
+    <Col span={24}>
       <div className="root-container">
         <Slider items={[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]} SliderItem={SliderItem} />
       </div>
+    </Col>
+    <Col span={24}>
+      <Label labelText="ВИКЛАДАЧІ" />
     </Col>
     <Col span={24}>
       <div className="root-container">
