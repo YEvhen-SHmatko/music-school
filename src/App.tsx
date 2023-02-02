@@ -23,7 +23,7 @@ const App: React.FC = () => (
       <Quote quoteText="Every art tends to become music" autor="Peter Walter" />
     </Col>
     <Col span={24}>
-      <Label labelText="ВІДДІЛИ" labelLine="__________" />
+      <Label labelText="ВІДДІЛИ" />
     </Col>
     <Col span={24}>
       <div className="root-container">
@@ -31,7 +31,7 @@ const App: React.FC = () => (
       </div>
     </Col>
     <Col span={24}>
-      <Label labelText="ВИКЛАДАЧІ" labelLine="____________" />
+      <Label labelText="ВИКЛАДАЧІ" />
     </Col>
     <Col span={24}>
       <div className="root-container">

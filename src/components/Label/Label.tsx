@@ -4,14 +4,12 @@ import s from './label.module.css';
 
 interface IProps {
   labelText: string;
-  labelLine: string;
 }
 
-const Label: React.FC<IProps> = ({ labelText, labelLine }) => (
+const Label: React.FC<IProps> = ({ labelText }) => (
   <div className={s.container}>
     <div className={`root-container ${s.content}`}>
       <Typography.Text className={s.labeltext}>{labelText}</Typography.Text>
-      <Typography.Text className={s.labelline}>{labelLine}</Typography.Text>
     </div>
   </div>
 );
