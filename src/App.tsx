@@ -1,7 +1,16 @@
 import { Col, Row } from 'antd';
 import React from 'react';
-import { Department, Header, Label, Slider, Baner, Quote, LogInForm, Teacher } from './components';
-import Links from './components/Links';
+import {
+  Department,
+  Header,
+  Label,
+  Slider,
+  Baner,
+  Quote,
+  LogInForm,
+  Teacher,
+  Links,
+} from './components';
 
 const SliderItem = ({ item }: { item: number }) => (
   <Department
