@@ -10,6 +10,8 @@ import {
   LogInForm,
   Teacher,
   Links,
+  Partners,
+  Copyright,
 } from './components';
 
 const SliderItem = ({ item }: { item: number }) => (
@@ -88,7 +90,39 @@ const App: React.FC = () => (
           <Col xs={24} lg={12}>
             <LogInForm />
           </Col>
-          <Col span={24}> partners </Col>
+          <Col span={24}>
+            <Partners
+              items={[
+                {
+                  link: 'https://google.com',
+                  img: '/img/image10.png',
+                  title: 'partner1',
+                  id: 'partner1',
+                },
+                {
+                  link: 'https://google.com',
+                  img: '/img/image11.png',
+                  title: 'partner2',
+                  id: 'partner2',
+                },
+                {
+                  link: 'https://google.com',
+                  img: '/img/image12.png',
+                  title: 'partner3',
+                  id: 'partner3',
+                },
+                {
+                  link: 'https://google.com',
+                  img: '/img/image13.png',
+                  title: 'partner4',
+                  id: 'partner4',
+                },
+              ]}
+            />
+          </Col>
+          <Col span={24}>
+            <Copyright startDate={2022} title={'Полтавська  дитяча  музична  школа №2.'} />
+          </Col>
         </Row>
       </div>
     </Col>

@@ -8,3 +8,7 @@
   width: 1200px;
   margin: 0 auto;
 }
+
+.w-100 {
+  width: 100%;
+}
