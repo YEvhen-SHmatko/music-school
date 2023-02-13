@@ -11,6 +11,7 @@ import {
   Teacher,
   Links,
   Partners,
+  Copyright,
 } from './components';
 
 const SliderItem = ({ item }: { item: number }) => (
@@ -118,6 +119,9 @@ const App: React.FC = () => (
                 },
               ]}
             />
+          </Col>
+          <Col span={24}>
+            <Copyright startDate={2022} title={'Полтавська  дитяча  музична  школа №2.'} />
           </Col>
         </Row>
       </div>

@@ -8,3 +8,4 @@ export { default as Teacher } from './Teacher';
 export { default as Label } from './Label';
 export { default as Links } from './Links';
 export { default as Partners } from './Partners';
+export { default as Copyright } from './Copyright';
