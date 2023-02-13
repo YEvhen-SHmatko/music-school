@@ -1,6 +1,7 @@
 import { Col, Row } from 'antd';
 import React from 'react';
 import { Department, Header, Label, Slider, Baner, Quote, LogInForm, Teacher } from './components';
+import Links from './components/Links';
 
 const SliderItem = ({ item }: { item: number }) => (
   <Department
@@ -62,7 +63,18 @@ const App: React.FC = () => (
       <div className="root-container">
         <Row>
           <Col xs={24} lg={12}>
-            contacts
+            <Links
+              items={[
+                {
+                  id: 'location',
+                  link: 'www.google.com',
+                  title: ' 36015, м.Полтава, вул.Сакко 14',
+                },
+                { id: 'phone', link: 'tel:+3809887797', title: '(0532)51-27-19' },
+                { id: 'facebook', link: 'www.facebook.com', title: 'Facebook' },
+                { id: 'instagram', link: 'www.instagram.com', title: 'Instagram' },
+              ]}
+            />
           </Col>
           <Col xs={24} lg={12}>
             <LogInForm />
