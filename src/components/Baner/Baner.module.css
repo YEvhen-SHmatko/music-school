@@ -1,17 +1,7 @@
-.background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-size: cover;
-}
 .block_button {
   height: min-content;
 }
-.block_img {
-  position: relative;
-}
+
 .text {
   color: #f2f2f2;
   font-size: 22px;
@@ -19,6 +9,7 @@
     2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000,
     2px 2px 2px rgba(0, 0, 0, 0);
 }
+
 .block_text {
   display: flex;
   justify-content: center;
@@ -27,6 +18,7 @@
   text-align: center;
   align-items: stretch;
 }
+
 .button-style {
   background: #cb7a30 !important;
 }
