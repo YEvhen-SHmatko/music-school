@@ -12,6 +12,7 @@ import {
   Links,
   Partners,
   Copyright,
+  BackgroundContainer,
 } from './components';
 
 const SliderItem = ({ item }: { item: number }) => (
@@ -29,40 +30,42 @@ const App: React.FC = () => (
       </div>
     </Col>
     <Col span={24}>
-      <Baner />
+      <BackgroundContainer backgroundImage="/img/BG.png">
+        <div className="root-container">
+          <Baner />
+        </div>
+      </BackgroundContainer>
     </Col>
     <Col span={24}>
       <Quote quoteText="Every art tends to become music" autor="Peter Walter" />
     </Col>
     <Col span={24}>
-      <Label labelText="ВІДДІЛИ" />
-    </Col>
-    <Col span={24}>
       <div className="root-container">
+        <Label labelText="ВІДДІЛИ" />
         <Slider items={[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]} SliderItem={SliderItem} />
       </div>
     </Col>
     <Col span={24}>
-      <Label labelText="ВИКЛАДАЧІ" />
-    </Col>
-    <Col span={24}>
-      <div className="root-container">
-        <Slider
-          items={[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]}
-          SliderItem={() => {
-            return (
-              <Teacher
-                img={{ alt: 'Teachers', src: '/img/teacher-img.jpg' }}
-                meta={{
-                  title: 'Наталія Шаповал',
-                  description: 'Естрадний відділ',
-                  links: [{ id: 'facebook', link: 'www.facebook.com' }],
-                }}
-              />
-            );
-          }}
-        />
-      </div>
+      <BackgroundContainer backgroundImage="/img/IMAGE.png">
+        <div className="root-container">
+          <Label labelText="ВИКЛАДАЧІ" />
+          <Slider
+            items={[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]}
+            SliderItem={() => {
+              return (
+                <Teacher
+                  img={{ alt: 'Teachers', src: '/img/teacher-img.jpg' }}
+                  meta={{
+                    title: 'Наталія Шаповал',
+                    description: 'Естрадний відділ',
+                    links: [{ id: 'facebook', link: 'www.facebook.com' }],
+                  }}
+                />
+              );
+            }}
+          />
+        </div>
+      </BackgroundContainer>
     </Col>
     <Col span={24}>
       <Quote
