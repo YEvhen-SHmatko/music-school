@@ -40,10 +40,8 @@ const App: React.FC = () => (
       <Quote quoteText="Every art tends to become music" autor="Peter Walter" />
     </Col>
     <Col span={24}>
-      <Label labelText="ВІДДІЛИ" />
-    </Col>
-    <Col span={24}>
       <div className="root-container">
+        <Label labelText="ВІДДІЛИ" />
         <Slider items={[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]} SliderItem={SliderItem} />
       </div>
     </Col>
