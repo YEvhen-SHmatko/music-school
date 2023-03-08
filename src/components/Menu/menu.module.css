@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  gap: 8px;
+}
+
+.item {
+  position: relative;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 4px 0px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.item::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all, 0.8s;
+}
+
+.item:hover.item::after {
+  width: 100%;
+}

@@ -1,9 +1,15 @@
 import React from 'react';
-import { Avatar, Button, Col, Row, Space, Typography } from 'antd';
-import { UserOutlined, MenuOutlined } from '@ant-design/icons';
+import { Avatar, Col, Row, Space, Typography } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
 import Icon from '../../assets/icon.svg';
+import Menu from '../Menu';
+import MobileMenu from '../MobileMenu';
+import { useMediaQuery } from 'react-responsive';
 
 const Header: React.FC = () => {
+  const isDesktop = useMediaQuery({ minWidth: 1440 });
+  const isTablet = useMediaQuery({ minWidth: 413, maxWidth: 1440 });
+  const isMobile = useMediaQuery({ maxWidth: 413 });
   return (
     <Row style={{ padding: '12px 28px' }}>
       <Col flex="134px">
@@ -16,13 +22,30 @@ const Header: React.FC = () => {
       </Col>
       <Col flex="auto">
         <Row justify="end" align="middle" gutter={8}>
+          {isDesktop && (
+            <Col>
+              <Menu
+                items={[
+                  { label: 'first', path: '/#' },
+                  { label: 'second', path: '/#1' },
+                ]}
+              />
+            </Col>
+          )}
           <Col>
             <UserOutlined />
           </Col>
           <Col>UK</Col>
-          <Col>
-            <Button style={{ background: '#E0E0E0' }} icon={<MenuOutlined />} />
-          </Col>
+          {(isMobile || isTablet) && (
+            <Col>
+              <MobileMenu
+                items={[
+                  { label: 'first', path: '/#' },
+                  { label: 'second', path: '/#1' },
+                ]}
+              />
+            </Col>
+          )}
         </Row>
       </Col>
     </Row>
