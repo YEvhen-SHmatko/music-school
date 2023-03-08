@@ -4,10 +4,7 @@ import { MenuOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 
 interface IProps {
-  items: {
-    label: string;
-    path: string;
-  }[];
+  items: IMenuItem[];
 }
 
 const MobileMenu: React.FC<IProps> = ({ items }) => {
