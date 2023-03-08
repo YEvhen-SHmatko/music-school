@@ -2,10 +2,7 @@ import React from 'react';
 import s from './menu.module.css';
 
 interface IProps {
-  items: {
-    label: string;
-    path: string;
-  }[];
+  items: IMenuItem[];
 }
 
 const Menu: React.FC<IProps> = ({ items }) => {

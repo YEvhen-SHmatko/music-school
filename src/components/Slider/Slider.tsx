@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'antd';
 import s from './slider.module.css';
-import { useMediaQuery } from 'react-responsive';
+import { useIsDesktop, useIsMobile, useIsTablet } from 'src/hooks';
 
 interface IProps<T> {
   items: T[];
@@ -13,9 +13,9 @@ const Slider = <T,>({ items, SliderItem }: IProps<T>): JSX.Element => {
 
   const [count, setCount] = React.useState(3);
 
-  const isDesktop = useMediaQuery({ minWidth: 1440 });
-  const isTablet = useMediaQuery({ minWidth: 413, maxWidth: 1440 });
-  const isMobile = useMediaQuery({ maxWidth: 413 });
+  const isDesktop = useIsDesktop();
+  const isTablet = useIsTablet();
+  const isMobile = useIsMobile();
   React.useEffect(() => {
     if (isDesktop) {
       setCount(3);
