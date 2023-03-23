@@ -9,6 +9,7 @@ interface IProps {
 
 const MobileMenu: React.FC<IProps> = ({ items }) => {
   const [isOpen, setIsOpen] = React.useState(false);
+
   return (
     <>
       {isOpen && (

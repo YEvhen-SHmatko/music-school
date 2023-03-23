@@ -12,3 +12,4 @@ export { default as Copyright } from './Copyright';
 export { default as BackgroundContainer } from './BackgroundContainer';
 export { default as MobileMenu } from './MobileMenu';
 export { default as Menu } from './Menu';
+export { default as Map } from './Map';
