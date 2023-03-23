@@ -7,8 +7,9 @@ import MobileMenu from '../MobileMenu';
 import { useIsDesktop, useIsMobile, useIsTablet } from 'src/hooks';
 
 const menuItems: IMenuItem[] = [
-  { label: 'first', path: '/#' },
-  { label: 'second', path: '/#1' },
+  { label: 'introduction', path: '/introduction' },
+  { label: 'price', path: '/price' },
+  { label: 'about us', path: '/about-us' },
 ];
 
 const Header: React.FC = () => {
@@ -20,7 +21,9 @@ const Header: React.FC = () => {
     <Row style={{ padding: '12px 28px' }}>
       <Col flex="134px">
         <Space wrap={false}>
-          <Avatar size={30} icon={<img src={Icon} alt="test" />} />
+          <a href="/">
+            <Avatar size={30} icon={<img src={Icon} alt="test" />} />
+          </a>
           <Typography.Title style={{ fontSize: 8, textTransform: 'uppercase' }}>
             ПОЛТАВСЬКА ДИТЯЧА МУЗИЧНА ШКОЛА No 2 ІМ. В.П. ШАПОВАЛЕНКА{' '}
           </Typography.Title>
