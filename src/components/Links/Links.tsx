@@ -31,7 +31,7 @@ const Links: React.FC<IProps> = ({ items }) => (
       <Space direction="vertical" className={s.links_block}>
         {items.map(({ id, link, title }) => {
           return (
-            <a href={link} key="location" style={{ color: 'white' }} className={s.item}>
+            <a href={link} key={id} style={{ color: 'white' }} className={s.item}>
               {icons[id]}
               <span>{title}</span>
             </a>

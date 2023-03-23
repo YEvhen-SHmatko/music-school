@@ -1,26 +1,8 @@
 import { Col, Row } from 'antd';
 import React from 'react';
-import {
-  Department,
-  Header,
-  Label,
-  Slider,
-  Baner,
-  Quote,
-  LogInForm,
-  Teacher,
-  Links,
-  Partners,
-  Copyright,
-  BackgroundContainer,
-} from './components';
-
-const SliderItem = ({ item }: { item: number }) => (
-  <Department
-    img={{ alt: 'Department', src: '/img/card-picture.jpg' }}
-    meta={{ title: 'Music department', description: 'Details' }}
-  />
-);
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { Header, LogInForm, Links, Partners, Copyright } from './components';
+import { Root, Introduction, Price, AboutUs } from './pages';
 
 const App: React.FC = () => (
   <Row>
@@ -29,50 +11,15 @@ const App: React.FC = () => (
         <Header />
       </div>
     </Col>
-    <Col span={24}>
-      <BackgroundContainer backgroundImage="/img/BG.png">
-        <div className="root-container">
-          <Baner />
-        </div>
-      </BackgroundContainer>
-    </Col>
-    <Col span={24}>
-      <Quote quoteText="Every art tends to become music" autor="Peter Walter" />
-    </Col>
-    <Col span={24}>
-      <div className="root-container">
-        <Label labelText="ВІДДІЛИ" />
-        <Slider items={[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]} SliderItem={SliderItem} />
-      </div>
-    </Col>
-    <Col span={24}>
-      <BackgroundContainer backgroundImage="/img/IMAGE.png">
-        <div className="root-container">
-          <Label labelText="ВИКЛАДАЧІ" />
-          <Slider
-            items={[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]}
-            SliderItem={() => {
-              return (
-                <Teacher
-                  img={{ alt: 'Teachers', src: '/img/teacher-img.jpg' }}
-                  meta={{
-                    title: 'Наталія Шаповал',
-                    description: 'Естрадний відділ',
-                    links: [{ id: 'facebook', link: 'www.facebook.com' }],
-                  }}
-                />
-              );
-            }}
-          />
-        </div>
-      </BackgroundContainer>
-    </Col>
-    <Col span={24}>
-      <Quote
-        quoteText="Музика - могутнє джерело думки. Без музичного виховання неможливий повноцінний розумовий розвиток."
-        autor="Василь Олександрович Сухомлинський"
-      />
-    </Col>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Root />} />
+        <Route path="/introduction" element={<Introduction />} />
+        <Route path="/price" element={<Price />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </Router>
     <Col span={24}>
       <div className="root-container">
         <Row>
