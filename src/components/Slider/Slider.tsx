@@ -41,12 +41,14 @@ const Slider = <T,>({ items, SliderItem }: IProps<T>): JSX.Element => {
   };
   return (
     <div className={s.container}>
-      <Button
-        type="text"
-        icon={<div>{'<'}</div>}
-        onClick={handleStartArrow}
-        disabled={offset === 0}
-      />
+      <div className={s.arrow}>
+        <Button
+          type="text"
+          icon={<div>{'<'}</div>}
+          onClick={handleStartArrow}
+          disabled={offset === 0}
+        />
+      </div>
       <div className={s.slides_scroll}>
         <div className={s.slides}>
           {createRenderData(items, count, offset).map((i) => (
@@ -54,12 +56,14 @@ const Slider = <T,>({ items, SliderItem }: IProps<T>): JSX.Element => {
           ))}
         </div>
       </div>
-      <Button
-        type="text"
-        icon={<div>{'>'}</div>}
-        onClick={handleEndArrow}
-        disabled={offset + count >= length}
-      />
+      <div className={s.arrow}>
+        <Button
+          type="text"
+          icon={<div>{'>'}</div>}
+          onClick={handleEndArrow}
+          disabled={offset + count >= length}
+        />
+      </div>
     </div>
   );
 };
