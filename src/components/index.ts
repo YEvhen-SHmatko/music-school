@@ -14,3 +14,4 @@ export { default as MobileMenu } from './MobileMenu';
 export { default as Menu } from './Menu';
 export { default as Map } from './Map';
 export { default as Product } from './Product';
+export { default as Footer } from './Footer';
