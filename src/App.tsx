@@ -73,26 +73,6 @@ const App: React.FC = () => (
           <Col span={24}>
             <Copyright startDate={2022} title={'Полтавська  дитяча  музична  школа №2.'} />
           </Col>
-          <Col span={24}>
-            <div className="root-container">
-              <Label labelText="ЦІНИ" />
-              <Slider
-                items={[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]}
-                SliderItem={() => {
-                  return (
-                    <Product
-                      items={[
-                        {
-                          title: 'Індивідуальний урок \n 400грн/60хв',
-                          description: '1 заняття \n вільний графік',
-                        },
-                      ]}
-                    />
-                  );
-                }}
-              />
-            </div>
-          </Col>
         </Row>
       </div>
     </Col>
