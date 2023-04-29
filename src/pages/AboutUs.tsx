@@ -1,6 +1,6 @@
 import { Col, Row } from 'antd';
 import React from 'react';
-import { Label, Map, Quote } from '../components';
+import { Label, Map, Quote, Info } from '../components';
 
 const AboutUs: React.FC = () => (
   <Row>
@@ -13,6 +13,41 @@ const AboutUs: React.FC = () => (
         <Map width="100%" height="400px" />
       </div>
     </Col>
+    <Col span={24}>
+      <div className="root-container">
+        <Row gutter={[8, 40]}>
+          <Col xs={24} md={12}>
+            <Info
+              label="Adress"
+              items={[
+                { id: '1', label: 'telephone', value: '2345567789' },
+                { id: '2', label: 'email', isActive: true, value: 'dfgh@dfgh.dfg' },
+              ]}
+            />
+          </Col>
+          <Col xs={{ span: 0 }} md={12} />
+          <Col xs={24} md={12}>
+            <Info
+              label="Adress"
+              items={[
+                { id: '1', label: 'telephone', value: '2345567789' },
+                { id: '2', label: 'email', isActive: true, value: 'dfgh@dfgh.dfg' },
+              ]}
+            />
+          </Col>
+          <Col xs={24} md={12}>
+            <Info
+              label="Adress"
+              items={[
+                { id: '1', label: 'telephone', value: '2345567789' },
+                { id: '2', label: 'email', isActive: true, value: 'dfgh@dfgh.dfg' },
+              ]}
+            />
+          </Col>
+        </Row>
+      </div>
+    </Col>
+
     <Col span={24}>
       <Quote
         quoteText="Музика - могутнє джерело думки. Без музичного виховання неможливий повноцінний розумовий розвиток."

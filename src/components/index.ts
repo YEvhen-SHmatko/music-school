@@ -16,3 +16,4 @@ export { default as Map } from './Map';
 export { default as Product } from './Product';
 export { default as Footer } from './Footer';
 export { default as AboutSchool } from './AboutSchool';
+export { default as Info } from './Info';
