@@ -1,0 +1,19 @@
+.typography_block {
+  margin-bottom: 60px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.title {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 25px;
+}
+
+.text {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 15px;
+}
