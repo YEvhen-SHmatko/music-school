@@ -8,7 +8,9 @@ const AboutSchool: React.FC = () => {
   return (
     <Row>
       <Col span={24}>
-        <Image src="/img/school-img.png" alt="school-img" />
+        <div className={s.school_img}>
+          <Image src="/img/school-img.png" alt="school-img" />
+        </div>
         <Typography className={s.typography_block}>
           <Paragraph className={s.title}>
             Полтавська дитяча музична школа № 2 відкрита 1 вересня 1964 року.
