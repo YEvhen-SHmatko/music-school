@@ -1,0 +1,26 @@
+.school_img {
+  display: flex;
+  justify-content: center;
+  align-item: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.typography_block {
+  padding-bottom: 60px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 25px;
+  text-align: center;
+}
+
+.text {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 15px;
+  line-height: 25px;
+  padding-top: 15px;
+}
