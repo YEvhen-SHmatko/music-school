@@ -15,13 +15,13 @@ const AboutUs: React.FC = () => (
     </Col>
     <Col span={24}>
       <div className="root-container">
-        <Row gutter={[8, 40]}>
+        <Row style={{ padding: '20px 0' }} gutter={[8, 40]}>
           <Col xs={24} md={12}>
             <Info
               label="Adress"
               items={[
                 { id: '1', label: 'telephone', value: '2345567789' },
-                { id: '2', label: 'email', isActive: true, value: 'dfgh@dfgh.dfg' },
+                { id: '2', label: 'email', value: 'dfgh@dfgh.dfg' },
               ]}
             />
           </Col>
@@ -39,7 +39,7 @@ const AboutUs: React.FC = () => (
             <Info
               label="Adress"
               items={[
-                { id: '1', label: 'telephone', value: '2345567789' },
+                { id: '1', label: 'Working hours', value: '8:00-20:00' },
                 { id: '2', label: 'email', isActive: true, value: 'dfgh@dfgh.dfg' },
               ]}
             />
