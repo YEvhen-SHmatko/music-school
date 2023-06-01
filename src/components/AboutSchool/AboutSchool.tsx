@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Row, Typography, Image } from 'antd';
 import s from './aboutSchool.module.css';
 
-const { Paragraph } = Typography;
+const { Paragraph, Title } = Typography;
 
 const AboutSchool: React.FC = () => {
   return (
@@ -12,9 +12,9 @@ const AboutSchool: React.FC = () => {
           <Image src="/img/school-img.png" alt="school-img" />
         </div>
         <Typography className={s.typography_block}>
-          <Paragraph className={s.title}>
+          <Title level={4} className={s.title}>
             Полтавська дитяча музична школа № 2 відкрита 1 вересня 1964 року.
-          </Paragraph>
+          </Title>
           <Paragraph className={s.text}>
             Рішенням виконавчого комітету Полтавської міської ради № 86 від 09.04.2003 року школі
             присвоєно ім’я Володимира Павловича Шаповаленка – нашого земляка, композитора, хорового
